@@ -83,11 +83,30 @@ button { cursor: pointer; }
 
 .nav-links { display: flex; align-items: center; gap: 34px; }
 
-.nav-links a, .sell-link { font-size: 12px; color: #58665c; }
+.nav-links a { font-size: 12px; color: #58665c; }
 
 .nav-links a:hover, .sell-link:hover { color: var(--orange); }
 
 .sell-link strong { color: var(--green); margin-left: 5px; }
+
+.sell-link {
+  background: var(--green);
+  color: white !important;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.sell-link:hover {
+  background: #183f30;
+  color: white !important;
+  transform: translateY(-1px);
+}
+
 
 .hero {
   min-height: 525px;
@@ -744,4 +763,13 @@ h2 {
   .vendor-form-card form { grid-template-columns: 1fr; }
   .vendor-form-card label:nth-of-type(4) { grid-column: auto; }
   .vendor-form-actions { flex-wrap: wrap; }
+}
+.join-us-link {
+  color: #ffffff !important;
+  background: #214e3a !important;
+  padding: 12px 18px !important;
+  border-radius: 8px;
+  display: inline-block;
+  font-weight: 700;
+  text-decoration: none;
 }
